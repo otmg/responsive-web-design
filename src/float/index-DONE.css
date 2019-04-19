@@ -1,0 +1,37 @@
+body {
+    font-size:40px;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+#header {
+    height: 150px;
+    background-color: skyblue;
+}
+
+#sideContentWrapper {
+    /* width: 100%;
+    float: none; */
+    background: #cccccc;
+    min-height: 200px;
+}
+
+#mainContent {
+    /* width: 100%;
+    float: none; */
+    background: slategray;
+    min-height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    #sideContentWrapper {
+        width: 40%;
+        float: left;
+    }
+    
+    #mainContent {
+        width: 60%;
+        float: right;
+    }
+}
