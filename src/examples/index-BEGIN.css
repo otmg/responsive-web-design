@@ -1,0 +1,27 @@
+#mainContent {
+    margin: 40px;
+}
+	
+#red, #yellow, #green, #blue {
+    height: 200px;
+    white-space: nowrap;
+    /* width: 100%; */
+}
+
+#red {
+    background: red;
+}
+
+#green {
+    background: green;
+}
+
+#yellow {
+    background: yellow;
+}
+
+#blue {
+    background: blue;
+}
+
+/* you go here */
