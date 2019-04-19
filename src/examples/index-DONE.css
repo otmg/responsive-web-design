@@ -1,0 +1,44 @@
+#mainContent {
+    margin: 40px;
+    font-size: 0;
+}
+
+#mainContent > * {
+    font-size: 16px;
+}
+	
+#red, #yellow, #green, #blue {
+    height: 200px;
+    white-space: nowrap;
+    /* width: 100%; */
+}
+
+#red {
+    background: red;
+}
+
+#green {
+    background: green;
+}
+
+#yellow {
+    background: yellow;
+}
+
+#blue {
+    background: blue;
+}
+
+@media screen and (min-width: 768px) {
+    #red, #blue, #green, #yellow {
+        width: 50%;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #red, #yellow, #green, #blue {
+        width: 25%;
+        display: inline-block;
+    }
+}
