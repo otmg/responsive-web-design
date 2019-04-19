@@ -1,0 +1,38 @@
+{
+  "name": "fcode-responsive-web-design",
+  "version": "1.0.0",
+  "description": "Presentation Responsive Web Desgin",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 2024\" \"open http://localhost:2024\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quangdatpham/fcode-responsive-web-design.git"
+  },
+  "keywords": [
+    "RWD",
+    "Responsive",
+    "Web",
+    "Design",
+    "@media",
+    "queries",
+    "flexbox",
+    "CSS",
+    "grid",
+    "CSS",
+    "units"
+  ],
+  "author": "Quang Dat Pham <quangdat2000.pham@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quangdatpham/fcode-responsive-web-design/issues"
+  },
+  "homepage": "https://github.com/quangdatpham/fcode-responsive-web-design#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "concurrently": "^4.1.0",
+    "run-script-os": "^1.0.5"
+  }
+}
