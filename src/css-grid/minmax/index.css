@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+  
+.container {
+    width: 80vw;
+    margin: auto;
+    margin-top: 56px;
+}
+  
+.card {
+    width: 400px;
+    height: 560px
+}
+  
+.card__content {
+    position: relative;
+    padding: 5em;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+  
+.card:hover .card__content {
+    transform: rotateY(.5turn);
+}
+  
+.card__front,
+.card__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2em;
+    backface-visibility: hidden; 
+    transform-style: preserve-3d;
+}
+  
+.card__front {
+    background-image: url('https://www.mtgcardmaker.com/mcmaker/createcard.php?name=&color=Green&mana_r=0&mana_u=0&mana_g=1&mana_b=0&mana_w=1&mana_colorless=0&picture=&supertype=&cardtype=Instant&subtype=&expansion=&rarity=Common&cardtext=&power=&toughness=&artist=&bottom=%E2%84%A2+%26+%C2%A9+1993-2013+Wizards+of+the+Coast+LLC&set1=&set2=&setname=');
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.6);
+    height: 560px;
+    border-radius: 20px;
+    background-color: black;
+}
+  
+.card__back::before {
+    content: '';
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    right: 1em;
+    left: 1em;
+    transform: translateZ(4rem);
+    border: 3px solid gold;
+}
+  
+.card__front::before {
+    content: '';
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    right: 1em;
+    left: 1em;
+    transform: translateZ(4rem);
+    border: 3px solid darkgreen;
+}
+  
+  
+.card__title {
+    margin-top: 1px;
+    font-size: 1.4rem;
+    top: 0;
+    margin-left: 10px;
+    transform: translateZ(3rem);
+}
+  
+.front_img2 {
+    background-color: black;
+    margin-top: 9px;
+    margin-left: 2px;
+    width: 330px;
+    height: 242px;
+    z-index: 200;
+}
+  
+.front_img {
+    margin-top: 9px;
+    margin-left: 2px;
+    transform: translateZ(2rem);
+}
+  
+.card__subtitle {
+    margin-top: 60px;
+    padding-left: 9px;
+    padding-right: 7px;
+    font-size: 1.2em;
+    transform: translateZ(3rem);
+}
+  
+.back_img {
+    margin-top: 36px;
+    margin-left: 2px;
+    transform: translateZ(2rem);
+}
+  
+.card__body {
+    margin: 50px 10px 0 10px;
+    font-size: 1.2em;
+    transform: translateZ(2rem);
+}
+  
+.card__back {
+    background-image: url('https://www.mtgcardmaker.com/mcmaker/createcard.php?name=Champion+of+Code&color=Gold&mana_r=0&mana_u=0&mana_g=2&mana_b=0&mana_w=0&mana_colorless=1&picture=&supertype=Legendary&cardtype=Artifact&subtype=&expansion=Magic+2012&rarity=Mythic&cardtext=&power=&toughness=&artist=&bottom=%E2%84%A2+%26+%C2%A9+1993-2013+Wizards+of+the+Coast+LLC&set1=&set2=&setname=');
+    transform: rotateY(.5turn);
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.6);
+    height: 560px;
+    border-radius: 20px;
+}
